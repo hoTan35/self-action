@@ -1,0 +1,14 @@
+name: First Practice #Define Workflow name
+on: workflow_dispatch # Define events
+jobs:
+  first-job: # job name, up to you
+    runs-on: ubuntu-latest # key name, setting environment
+    steps: # Describe Steps
+      - name: Print greeting
+        run: echo "Hello!!!!!! World!!!"
+      - name: Multiple Lines
+        run: | #멀티라인일 때는 | 기호 사용
+          echo "Line1123123123"
+          echo "Line212313213"
+      - name: Print goodbye
+        run: echo "Good Goodbye!"
